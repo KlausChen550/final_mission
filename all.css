@@ -1,0 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Environment setup */
+*,*::before,*::after { 
+  box-sizing: border-box;
+}
+.body{
+/*   max-width: 1920px; */
+  font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    background: #FBFBFB;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+/* header */
+.header{
+  max-width: 100%;
+/*   border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+}
+.header a{
+  color: #000;
+  font-size: 28px;
+  padding: 24px 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.header a:hover{
+  color: #456;
+}
+/* Banner */
+.banner{
+  max-width: 100%;
+/*   border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+}
+.banner-picture{
+  width:50%;
+  height: auto;
+  vertical-align: middle;
+}
+.banner-content{
+/*   border: 1px solid black; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+/*   align-items: center; */
+}
+@media(max-width: 996px){
+  .banner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+  }
+}
+@media (max-width:996px){
+  .banner-picture{
+    width: 100%;
+    padding: 0 8px;
+  }
+}
+@media (max-width:996px){
+  .banner-content{
+    width: 100%;
+    padding: 0 8px;
+  }
+}
+.date{
+  font-size: 16px;
+  font-weight: 500;
+  padding: 4px 24px;
+}
+.word1{
+  display: flex;
+  justify-content: left;
+}
+.word3{
+  font-size: 24px;
+  font-weight: 500;
+  padding: 4px 24px;
+}
+.remark{
+  width: 88px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  margin: 6px;
+  color: #FFFFFF;
+  background: #0027D5;
+  text-decoration: none;
+}
+.remark:hover{
+  background: grey;
+}
+.word2{
+  font-size: 28px;
+  font-weight: 700;
+  padding: 4px 24px;
+}
+/* Section */
+.container{
+  max-width: 636px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+.section-title{
+  font-size: 28px;
+  weight: 700;
+  line-height: 1.5;
+  color: #0027D5;
+  padding: 12px 0;
+}
+.section-content{
+  font-size: 16px;
+  weight: 500;
+  line-height: 1.5;
+  padding: 12px 0;
+}
+.section-content ul{
+  list-style-type:disc
+}
+.section-content a{
+  text-decoration: none;
+}
+.section-image{
+  margin: 0 auto;
+  padding: 24px 0;
+}
+.section-sub{
+  font-size: 20px;
+  weight: 700;
+  line-height: 1.5;
+  padding:12px 0;
+}
+.summary{
+  font-size: 16px;
+  weight: 700;
+  line-height:1.5;
+  background: #EDEDED;
+  padding: 24px;
+  border-radius: 24px;
+}
+.updown-pages{
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 0;
+}
+/* .page-btn{
+  width: 108px;
+  height:40px;
+  font-size: 16px;
+  weight:500;
+  line-height: 1.5;
+  border: 1px solid #000;
+  border-radius: 40px;
+  padding: 8px 16px;
+} */
+.page-btn a{
+  display: block;
+  text-decoration: none;
+  width: 108px;
+  height:40px;
+  font-size: 16px;
+  weight:500;
+  line-height: 1.5;
+  border: 1px solid #000;
+  border-radius: 40px;
+  padding: 8px 16px;
+
+}
+.page-btn a:hover{
+  background: #003c9d;
+  color: #fff;
+}
+/* Page End and Footer */
+.contact{
+/*   border: 1px solid black; */
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 0;
+}
+.mail{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5
+}
+.icon ul{
+  display:flex;  
+}
+@media(max-width:576px){
+  .contact{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media(max-width: 576px){
+  .mail{
+    text-align: center;
+    padding: 8px 0;
+  }
+}
+
+.footer{
+  font-size: 16px;
+  weight: 500;
+  text-align: center;
+  padding: 24px 0;
+}
