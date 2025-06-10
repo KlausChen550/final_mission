@@ -161,8 +161,8 @@ img{
   max-width: 636px;
   margin: 0 auto;
   padding-top: 80px;
-  padding-left: 16px;
-  padding-right: 16px;
+  /* padding-left: 16px;
+  padding-right: 16px; */
 }
 .section-title{
   font-size: 28px;
